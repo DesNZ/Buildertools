@@ -1,7 +1,10 @@
 services:
   chippy-pwa:
-    build: .
+    image: ghcr.io/DesNZ/buildertools:latest
     container_name: chippy-pwa
     restart: unless-stopped
     ports:
-      - "8080:80"
+      - "7090:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
