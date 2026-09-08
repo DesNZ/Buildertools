@@ -1,6 +1,6 @@
 services:
   chippy-pwa:
-    image: ghcr.io/desnz/buildertools:latest
+    image: ghcr.io/desnz/buildertools
     container_name: chippy-pwa
     ports:
       - "7090:80"
