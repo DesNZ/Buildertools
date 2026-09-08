@@ -1,0 +1,7 @@
+services:
+  chippy-pwa:
+    build: .
+    container_name: chippy-pwa
+    restart: unless-stopped
+    ports:
+      - "8080:80"
